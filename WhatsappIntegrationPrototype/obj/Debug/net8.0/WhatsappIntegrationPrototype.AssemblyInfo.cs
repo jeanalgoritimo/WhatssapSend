@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WhatsappIntegrationPrototype")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f4e022f314d76c8658ea4a2dd98f96af3426c8c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c9454a5011a603d5e287f356ae465ce632f9c45")]
 [assembly: System.Reflection.AssemblyProductAttribute("WhatsappIntegrationPrototype")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WhatsappIntegrationPrototype")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
