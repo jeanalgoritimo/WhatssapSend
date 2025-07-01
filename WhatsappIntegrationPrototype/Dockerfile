@@ -14,7 +14,7 @@ RUN dotnet restore "WhatsappIntegrationPrototype.csproj"
 COPY . .
 
 # Publica a aplicação para a pasta 'out'
-RUN dotnet publish "WhatsappIntegrationPrototype.csproj" -c Release -o /app/out --no-restore
+RUN dotnet publish "WhatsappIntegrationPrototype.csproj" -c Release -o /app/out
 
 # Etapa de Runtime: Usa a imagem do runtime do .NET para executar a aplicação
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
