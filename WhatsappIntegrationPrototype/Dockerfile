@@ -9,6 +9,7 @@ RUN dotnet nuget locals all --clear
 
 # Copia o arquivo de projeto e restaura as dependências NuGet
 COPY ["WhatsappIntegrationPrototype.csproj", "./"]
+COPY ["nuget.config", "./"]   
 RUN dotnet restore "WhatsappIntegrationPrototype.csproj"
 
 # Copia todo o código fonte restante
