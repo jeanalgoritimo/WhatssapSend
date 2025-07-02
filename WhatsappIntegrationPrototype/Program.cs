@@ -1,5 +1,5 @@
 using WhatsappIntegrationPrototype.Services; // Para poder usar o AIService
-  
+using Microsoft.AspNetCore.Builder; // Adicionado para garantir que WebApplicationBuilder seja reconhecido
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,32 +9,33 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// --- Adicionar esta seÁ„o para registrar o AIService ---
+// --- Adicionar esta se√ß√£o para registrar o AIService ---
 builder.Services.AddSingleton<AIService>(sp =>
 {
     var logger = sp.GetRequiredService<ILogger<AIService>>(); // Pega o logger
-    var configuration = sp.GetRequiredService<IConfiguration>(); // Pega as configuraÁıes
-    var geminiApiKey = configuration["GeminiAI:ApiKey"]; // ObtÈm a chave do Gemini do appsettings.json
+    var configuration = sp.GetRequiredService<IConfiguration>(); // Pega as configura√ß√µes
+    var geminiApiKey = configuration["GeminiAI:ApiKey"]; // Obt√©m a chave do Gemini do appsettings.json
 
-    // Cria e retorna uma inst‚ncia do AIService, passando o logger e a chave de API
+    // Cria e retorna uma inst√¢ncia do AIService, passando o logger e a chave de API
     return new AIService(logger, geminiApiKey);
 });
-// --- Fim da seÁ„o a ser adicionada ---
+// --- Fim da se√ß√£o a ser adicionada ---
 
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
 
-app.UseHttpsRedirection(); // Garante que o tr·fego seja HTTPS
+// MOVIDO PARA FORA DO BLOCO if (app.Environment.IsDevelopment())
+// Agora o Swagger estar√° dispon√≠vel em todos os ambientes, incluindo Produ√ß√£o (Render.com)
+app.UseSwagger();
+app.UseSwaggerUI();
+
+
+app.UseHttpsRedirection(); // Garante que o tr√°fego seja HTTPS
 
 app.UseAuthorization();
 
 app.MapControllers(); // Mapeia os controllers para as rotas
 
-app.Run(); // Inicia a aplicaÁ„o
+app.Run(); // Inicia a aplica√ß√£o
