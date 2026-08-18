@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\whatssap\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj": {}
+    "C:\\Nova pasta\\WhatssapSend\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj": {}
   },
   "projects": {
-    "C:\\whatssap\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj": {
+    "C:\\Nova pasta\\WhatssapSend\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\whatssap\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj",
+        "projectUniqueName": "C:\\Nova pasta\\WhatssapSend\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj",
         "projectName": "WhatsappIntegrationPrototype",
-        "projectPath": "C:\\whatssap\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj",
-        "packagesPath": "C:\\Users\\Geam\\.nuget\\packages\\",
-        "outputPath": "C:\\whatssap\\WhatsappIntegrationPrototype\\obj\\",
+        "projectPath": "C:\\Nova pasta\\WhatssapSend\\WhatsappIntegrationPrototype\\WhatsappIntegrationPrototype.csproj",
+        "packagesPath": "C:\\Users\\Gean\\.nuget\\packages\\",
+        "outputPath": "C:\\Nova pasta\\WhatssapSend\\WhatsappIntegrationPrototype\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Geam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gean\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.316/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
